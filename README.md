@@ -2,6 +2,9 @@
 
 [![LangGraph](https://img.shields.io/badge/LangGraph-Powered-blue)](https://langchain-ai.github.io/langgraph)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Status](https://img.shields.io/badge/Status-In%20Progress-orange)](https://github.com/naoufal51/deep_researcher)
+
+> **Note:** This project is currently under active development. Features and documentation may change frequently.
 
 DeepResearcher is a sophisticated multi-agent system built with LangGraph that automates the research and content creation process. By orchestrating specialized AI agents working together through a defined workflow, it transforms queries into comprehensive, high-quality content with minimal human intervention.
 
