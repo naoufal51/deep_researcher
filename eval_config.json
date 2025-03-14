@@ -1,0 +1,65 @@
+{
+  "test_cases": [
+    {
+      "name": "general_research_query",
+      "description": "Tests basic research capabilities without math requirements",
+      "input": "What are the environmental impacts of electric vehicles compared to traditional combustion engine vehicles?",
+      "expected_agents": ["research_agent", "writing_agent", "publishing_agent"],
+      "metrics": ["accuracy", "thoroughness", "coherence"]
+    },
+    {
+      "name": "math_focused_query",
+      "description": "Tests mathematical analysis capabilities",
+      "input": "Calculate the carbon footprint savings when switching from a gasoline car to an electric vehicle over 5 years.",
+      "expected_agents": ["research_agent", "math_agent", "writing_agent", "publishing_agent"],
+      "metrics": ["accuracy", "calculation_correctness", "coherence"]
+    },
+    {
+      "name": "complex_mixed_query",
+      "description": "Tests complex reasoning with both research and math",
+      "input": "Analyze the economic implications of transitioning to renewable energy sources for developing countries by 2030.",
+      "expected_agents": ["research_agent", "math_agent", "writing_agent", "publishing_agent"],
+      "metrics": ["accuracy", "thoroughness", "coherence", "calculation_correctness"]
+    },
+    {
+      "name": "technical_query",
+      "description": "Tests handling of technical/scientific content",
+      "input": "Explain how quantum computing differs from classical computing and its potential applications.",
+      "expected_agents": ["research_agent", "writing_agent", "publishing_agent"],
+      "metrics": ["accuracy", "thoroughness", "coherence", "technical_correctness"]
+    },
+    {
+      "name": "data_analysis_query",
+      "description": "Tests ability to analyze and interpret numerical data",
+      "input": "Compare the growth rates of renewable energy adoption across different regions of the world over the past decade.",
+      "expected_agents": ["research_agent", "math_agent", "writing_agent", "publishing_agent"],
+      "metrics": ["accuracy", "data_interpretation", "coherence"]
+    }
+  ],
+  "metrics": {
+    "accuracy": {
+      "description": "Factual correctness of the content",
+      "prompt": "On a scale of 1-10, rate the accuracy of the content. Consider factual correctness, up-to-date information, and absence of misleading statements. Provide your rating and a brief explanation."
+    },
+    "thoroughness": {
+      "description": "Comprehensiveness of the content",
+      "prompt": "On a scale of 1-10, rate the thoroughness of the content. Consider depth of research, breadth of perspectives covered, and comprehensiveness of information. Provide your rating and a brief explanation."
+    },
+    "coherence": {
+      "description": "Organization and readability",
+      "prompt": "On a scale of 1-10, rate the coherence and organization of the content. Consider logical flow, structure, readability, and overall presentation quality. Provide your rating and a brief explanation."
+    },
+    "calculation_correctness": {
+      "description": "Accuracy of numerical analysis",
+      "prompt": "On a scale of 1-10, rate the correctness of any calculations or numerical analysis. Consider mathematical accuracy, appropriate formulas, and sound methodology. Provide your rating and a brief explanation. If no calculations were needed, explain why."
+    },
+    "technical_correctness": {
+      "description": "Accuracy of technical concepts",
+      "prompt": "On a scale of 1-10, rate the technical correctness of the content. Consider proper use of technical terms, accurate explanation of complex concepts, and appropriate simplification for the audience. Provide your rating and a brief explanation."
+    },
+    "data_interpretation": {
+      "description": "Quality of data analysis",
+      "prompt": "On a scale of 1-10, rate the quality of data interpretation. Consider appropriate use of statistics, meaningful insights drawn from data, and avoidance of misrepresentation. Provide your rating and a brief explanation."
+    }
+  }
+} 
